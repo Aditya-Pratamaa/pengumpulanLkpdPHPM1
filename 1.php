@@ -1,13 +1,9 @@
 <?php
-
-// Fungsi untuk mendeteksi simbol
 function simbol($str) {
     preg_match_all('/[\'^£$%&*()}{@#~?><>,|!=_+¬-]/', $str, $matches);  
     return $matches[0]; 
 }
-
-// Cek apakah form telah disubmit
-$str = isset($_POST['symbol']) ? $_POST['symbol'] : ""; // Mengambil input teks dari form
+$str = isset($_POST['symbol']) ? $_POST['symbol'] : ""; 
 
 $simbol_terdeteksi = simbol($str);
 
