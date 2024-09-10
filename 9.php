@@ -1,5 +1,4 @@
 <?php
-// Fungsi untuk mencari jenis koin
 function cariKoin($jumlahUang) {
     $koin = [1000, 500, 200, 100, 50];
     $hasil = [];
@@ -13,7 +12,6 @@ function cariKoin($jumlahUang) {
     return $hasil;
 }
 
-// Inisialisasi variabel hasil
 $koinYangDigunakan = [];
 $jumlahUang = '';
 
